@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shorcut icon" href="img/logo.png">
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="css/all.css" rel="stylesheet">
+        <link href="css/dashboard-product-album.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
+        <img src="img/logotipo.png" alt="logotipo" style="width: 30px;">
+        <span style="color: white; font-size: 1.8em;"><strong>Life</strong> of code</span>
+      </a>
+      <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="container-fluid">
+      <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+              <br>
+              <!--<a class="btn" id="btn-nuevo"><i class="fas fa-plus-circle"></i> Nuevo</a>-->
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="btn-nuevo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-plus-circle"></i> Nuevo
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btn-nuevo">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+
+              <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                      <i class="fas fa-code"></i>
+                      <span data-feather="home"></span>
+                      Mi Codes <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-laptop"></i>
+                      <span data-feather="file"></span>
+                      Computadoras
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fas fa-users"></i>
+                      <span data-feather="shopping-cart"></span>
+                      Compartidos conmigo
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="far fa-clock"></i>
+                      <span data-feather="users"></span>
+                      Reciente
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="far fa-star"></i>
+                      <span data-feather="bar-chart-2"></span>
+                      Favoritos
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fas fa-trash-alt"></i>
+                      <span data-feather="layers"></span>
+                      Basurero
+                    </a>
+                  </li>
+                </ul>
+        
+                <!--<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                  <span>Saved reports</span>
+                  <a class="d-flex align-items-center text-muted" href="#">
+                    <span data-feather="plus-circle"></span>
+                  </a>
+                </h6>-->
+
+                <ul class="nav flex-column mb-2">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fas fa-cloud-upload-alt"></i>
+                      <span data-feather="file-text"></span>
+                      Backups
+                    </a>
+                  </li>
+                </ul>
+                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Almacenamiento</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="plus-circle"></span>
+                    </a>
+                  </h6>
+              </div>
+            </na>  
+        </div>
+    </div>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <nav class="site-header sticky-top py-1">
+        <div class="container-fluid">
+          <div class="row">
+            <div style="float: left; width: 92%">
+              <a class="" href="#" style="margin-left: 10px">
+                <span style="color: white; font-size: 1.5em;">Code</span>
+              </a>
+            </div>
+
+            <div class="container d-flex flex-column flex-md-row justify-content-between" style="float: left; width: 8%">
+              <a class="py-2 d-none d-md-inline-block" href="#"><i class="fas fa-th"></i></a>
+              <a class="py-2 d-none d-md-inline-block" href="#"><i class="fas fa-info-circle"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/example-text.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Codigo-de-ejemplo-1.html</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/example-text.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Codigo-de-ejemplo-2.html</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/example-text.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Codigo-de-ejemplo-3.html</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/example-text.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Codigo-de-ejemplo-4.html</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/example-text.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Codigo-de-ejemplo-5.html</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/example-text.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Codigo-de-ejemplo-6.html</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/example-text.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Codigo-de-ejemplo-7.html</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/example-text.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Codigo-de-ejemplo-8.html</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/example-text.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Codigo-de-ejemplo-9.html</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

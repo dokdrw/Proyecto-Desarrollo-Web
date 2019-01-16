@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shorcut icon" href="img/logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
+    <link href="css/home-1.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md">
+        <!--<a class="navbar-brand" href="#">Navbar</a>-->
+        <a class="navbar-brand" style="margin: 0px; padding: 0px;" href="home-1.html">
+            <img src="img/logotipo.png" style="width: 25px; margin: 0px 0px 5px 0px;">
+            <span style="color: white; font-size: 1.2em;"><strong>Life</strong> of code</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!--<span class="navbar-toggler-icon"></span>-->
+            <i class="fa fa-bars" aria-hidden="true" style="font-size: 1.5rem; color: rgba(200, 200, 200, 0.90)"></i>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-0 my-md-0 ml-auto">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0">Search</button>
+            </form>
+            <ul class="navbar-nav ml-0">
+                <!--<li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="home-1.html"><i class="fa fa-home" aria-hidden="true"></i> Casa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-cog" aria-hidden="true"></i> Configuraciones</a>
+                    <!--<a class="nav-link disabled" href="#">Disabled</a>-->
+                </li>          
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" style="padding: 4px 5px 0px 5px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <!--Dropdown-->
+                        <img src="img/profile-pics/profile.jpg" id="img-profile1" style="width: 30px;" class="rounded-circle d-none d-md-block">
+                        <span class="d-sm-block d-md-none"><i class="fa fa-user" aria-hidden="true"></i> Otros ajustes</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <div class="container" style="width: auto;">
+                            <div class="row text-muted" style="font-size: 0.7rem;">
+                                <div class="col">
+                                    <img src="img/profile-pics/profile.jpg" id="img-profile2" style="width: 60px; margin-left: auto; margin-right: auto;" class="rounded-circle">
+                                </div>
+                                <div class="col">
+                                    <span id="span-usuario"><strong>Nombre de usuario</strong><br>usuario@mail.com</span>
+                                    <a class="btn" id="btn-perfil" style="margin: 5px 0px 0px 0px;" href="#">Perfil</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>                    
+                        <div class="container">
+                            <div class="row text-muted" style="font-size: 0.7rem;">
+                                <div class="col"><a class="btn" id="btn-cambiar-imagen" style="margin: 2px 0px;" href="#">Cambiar imagen</a></div>
+                                <div class="col"><a class="btn" id="btn-cerrar-sesion" style="margin: 2px 0px;" href="#">Cerrar sesión</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="nav-side-menu">
+        <div class="brand">Opciones</div>
+        <i class="fa fa-bars fa-2x toggle-btn" id="menu-icon" data-toggle="collapse" data-target="#menu-content"></i>
+        <div class="menu-list">
+            <ul id="menu-content" class="menu-content collapse out">
+                <!--<li>
+                    <a href="#">
+                        <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                    </a>
+                </li>-->
+                <!--<li data-toggle="collapse" data-target="#nuevo" class="collapsed active">-->
+                <li data-toggle="collapse" data-target="#nuevo" class="collapsed">
+                    <a href="#"><i class="fas fa-plus-circle fa-lg"></i> Nuevo <span class="arrow"></span></a>
+                    <!--<a href="#"><i class="fa fa-gift fa-lg"></i> UI Elements <span class="arrow"></span></a>-->
+                </li>
+                <ul class="sub-menu collapse" id="nuevo">
+                    <li id="btn-nuevoArchivo"><a href="#">Archivo</a></li>
+                    <li id="btn-nuevaCarpeta"><a href="#">Carpeta</a></li>
+                    <li><a href="#">Otro</a></li>
+                    <!--<li class="active"><a href="#">Tabs &amp; Accordions</a></li>-->
+                </ul>
+
+                <li data-toggle="collapse" data-target="#codes" class="collapsed">
+                    <a href="#"><i class="fas fa-code fa-lg"></i> Mis Codes <span class="arrow"></span></a>
+                    <!--<a href="#"><i class="fa fa-globe fa-lg"></i> Services <span class="arrow"></span></a>-->
+                </li>
+                <ul class="sub-menu collapse" id="codes">
+                    <li>Archivos</li>
+                    <li>Carpetas</li>
+                    <li>Todos</li>
+                </ul>
+
+                <li data-toggle="collapse" data-target="#chats" class="collapsed">
+                    <a href="#"><i class="fa fa-comments fa-lg" aria-hidden="true"></i> Chats <span class="arrow"></span></a>
+                    <!--<a href="#"><i class="fa fa-globe fa-lg"></i> Services <span class="arrow"></span></a>-->
+                </li>
+                <ul class="sub-menu collapse" id="chats">
+                    <li>Chats de archivos</li>
+                    <li>Otros chats</li>
+                </ul>
+    
+    
+                <li data-toggle="collapse" data-target="#compartidos" class="collapsed">
+                    <a href="#"><i class="fas fa-users fa-lg"></i> Compartidos conmigo <span class="arrow"></span></a>
+                    <!--<a href="#"><i class="fa fa-car fa-lg"></i> New <span class="arrow"></span></a>-->
+                </li>
+                <ul class="sub-menu collapse" id="compartidos">
+                    <li>Archivos</li>
+                    <li>Carpetas</li>
+                    <li>Todos</li>
+                </ul>
+
+                <li>
+                    <a href="#"><i class="far fa-clock fa-lg"></i> Recientes</a>
+                    <!--<a href="#"><i class="fa fa-user fa-lg"></i> Perfil</a>-->
+                </li>
+
+                <li>
+                    <a href="#"><i class="far fa-star fa-lg"></i> Favoritos</a>
+                    <!--<a href="#"><i class="fa fa-user fa-lg"></i> Perfil</a>-->
+                </li>                
+
+                <li>
+                    <a href="#"><i class="fas fa-trash-alt fa-lg"></i> Basurero</a>
+                    <!--<a href="#"><i class="fa fa-user fa-lg"></i> Perfil</a>-->
+                </li>
+
+                <li>
+                    <a href="#"><i class="fas fa-cloud-upload-alt fa-lg"></i> Backups</a>
+                    <!--<a href="#"><i class="fa fa-user fa-lg"></i> Perfil</a>-->
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <i class="fa fa-users fa-lg"></i> Usuarios
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" id="main">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="album py-5 bg-light">
+                    <div class="container">
+                        <div class="row" id="div-regresar" style="display: none;">
+                            <div class="col-md-12">
+                                <a class="btn" id="btn-regresar" onclick="regresar();" style="margin: 0; border: 1px solid dimgrey; border-radius: 3px;">Regresar</a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row" id="contenedor-principal"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal nueva carpeta-->
+    <div class="modal fade" id="modalNuevaCarpeta" tabindex="-1" role="dialog" aria-labelledby="modalNuevaCarpetaLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modalNuevaCarpetaLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <h3>Nueva carpeta</h3>
+            <label for="txt-nombreCarpeta">Nombre:</label>
+            <input type="text" id="txt-nombreCarpeta" class="form-control" onkeyup='validarPatron(/^[^]+$/,"#txt-nombreCarpeta")' 
+            placeholder="Ingrese el nombre de la nueva carpeta"><br>
+            <div class="valid-feedback" style="margin-top: 0; margin-bottom: 0;"><small>Todo bien, el nombre de la carpeta es valida.</small></div>
+            <div class="invalid-feedback" style="margin-top: 0; margin-bottom: 0;"><small>No esta bien, el nombre de la carpeta es inválida.</small></div>
+            <label for="txt-descripcionCarpeta">Descripción:</label>
+            <textarea class="form-control" id="txt-descripcionCarpeta" placeholder="Descripción de la carpeta" style="resize: none;"></textarea><br>
+            <label for="slc-ubicacionCarpeta">Ubicacion:</label>
+            <select class="form-control" id="slc-ubicacionCarpeta">
+                <option value="">En página de inicio</option>
+            </select>
+            <!--<input type="text" id="new-correo" class="form-control" placeholder="Correo electronico"><br>
+            <input type="text" id="new-password" class="form-control" placeholder="Password"><br>
+            <input type="text" id="new-url_imagen" class="form-control" placeholder="Url de la imagen"><br>-->
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" id="btn-crearCarpeta" class="btn btn-success" data-dismiss="">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal nuevo archivo-->
+    <div class="modal fade" id="modalNuevoArchivo" tabindex="-1" role="dialog" aria-labelledby="modalNuevoArchivoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modalNuevoArchivoLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <h3>Nuevo archivo</h3>
+            <div>
+                <label for="txt-nombreArchivo">Nombre:</label>
+                <input type="text" id="txt-nombreArchivo" class="form-control" onkeyup='validarPatron(/^\S+$/,"#txt-nombreArchivo")' 
+                placeholder="Ingrese el nombre del nuevo archivo">
+                <div class="valid-feedback" style="margin-top: 0; margin-bottom: 0;"><small>Todo bien, el nombre del archivo es valido.</small></div>
+                <div class="invalid-feedback" style="margin-top: 0; margin-bottom: 0;"><small>No esta bien, el nombre del archivo es inválido.</small></div>                
+            </div>
+            <br>
+            <label for="txt-descripcionArchivo">Descripción:</label>
+            <textarea class="form-control" id="txt-descripcionArchivo" placeholder="Descripción del archivo" style="resize: none;"></textarea><br>
+            <div class="row col-md-12">
+                <div class="col-md-6">
+                    <label for="slc-ubicacionArchivo">Ubicacion:</label>
+                    <select class="form-control" id="slc-ubicacionArchivo" style="font-size: 0.83rem;">
+                        <option value="">En página de inicio</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="slc-tiposArchivo">Tipo:</label>
+                    <select class="form-control" id="slc-tiposArchivo" style="font-size: 0.83rem;">
+                        <option value="">Seleccione un extension</option>
+                    </select>
+                    <div class="valid-feedback" style="margin-top: 0; margin-bottom: 0;"><small>Todo bien, tipo de archivo valido.</small></div>
+                    <div class="invalid-feedback" style="margin-top: 0; margin-bottom: 0;"><small>Seleccione un tipo de archivo valido.</small></div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <input type="file" id="file-input" accept=".txt,.html,.js,.css,.json,.php" style="margin-bottom: 5px;">
+                <textarea class="form-control" style="resize: none;" rows="3" id="txt-fileContent" 
+                placeholder="Contenido del archivo" disabled></textarea>
+                <div class="valid-feedback" style="margin-top: 0; margin-bottom: 0;"><small>Todo bien, archivo valido.</small></div>
+                <div class="invalid-feedback" style="margin-top: 0; margin-bottom: 0;"><small>No esta bien, seleccione un archivo valido.</small></div>
+            </div>
+
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" id="btn-crearArchivo" class="btn btn-success" data-dismiss="">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal editar archivo -->
+    <div class="modal fade" id="modalEditarArchivo" tabindex="-1" role="dialog" aria-labelledby="modalEditarArchivoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modalEditarArchivoLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <h3>Editar archivo</h3>
+                <textarea class="form-control" id="content-editarArchivo" style="background-color: rgba(50, 50, 50, 0.90); 
+                    color: rgba(200, 200, 200, 0.90); resize: none;" rows="16"></textarea>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" id="btn-updateContent" class="btn btn-success" data-dismiss="modal">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal cambiar imagen perfil -->
+    <div class="modal fade" id="modalCambiarImagen" tabindex="-1" role="dialog" aria-labelledby="modalCambiarImagenLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modalCambiarImagenLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <h3>Cambio de imagen de perfil</h3>
+            <input type="text" id="new-imageUrl" class="form-control" onkeyup='validarPatron(/^.*\.(jpg|JPG|gif|GIF|png|PNG)$/,"#new-imageUrl")' 
+            placeholder="Ingrese la URL de la imagen"><br>
+            <div class="valid-feedback" style="margin-top: 0; margin-bottom: 0;"><small>Todo bien, la URL de la imagen es valida.</small></div>
+            <div class="invalid-feedback" style="margin-top: 0; margin-bottom: 0;"><small>No esta bien, la URL de la imagen es inválida.</small></div>
+            <!--<input type="text" id="new-correo" class="form-control" placeholder="Correo electronico"><br>
+            <input type="text" id="new-password" class="form-control" placeholder="Password"><br>
+            <input type="text" id="new-url_imagen" class="form-control" placeholder="Url de la imagen"><br>-->
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" id="btn-guardarImg" class="btn btn-success" data-dismiss="">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/controlador.home-1.js"></script>
+    
+</body>
+</html>

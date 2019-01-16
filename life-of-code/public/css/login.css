@@ -1,0 +1,139 @@
+body{
+    background-image: url(../img/street-in-holland-village.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.site-header {
+  background-color: rgba(40, 62, 74, .90);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+#link-registrar {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+#link-registrar:hover {
+  color: #fff;
+
+}
+
+#link-unirte {
+  color: #999;
+  transition: ease-in-out color .15s;
+  border: solid 1px #999;
+  padding: 0 10px 0 10px;
+  margin: 1px;
+}
+#link-unirte:hover {
+  color: #fff;
+  text-decoration: none;
+  border: solid 2px #fff;
+  margin: 0px;
+}
+
+#logo{
+    width: 20px;
+}
+
+#login{
+    background-color: rgba(243, 243, 243, .85);
+    width: 420px;
+    padding:40px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 3px;
+}
+
+body{
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+#login h1{
+    font-size:3em;
+    font-weight: bolder;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*.caja-texto{
+    width: 100%;
+    font-size: 1.1em;
+    padding: 10px 11px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c2c2c2;
+    margin-bottom: 10px;
+}*/
+
+input[type="email"], input[type="password"]{
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 11px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c2c2c2;
+    margin-bottom: 10px;
+    /*margin-bottom: 30px;*/
+    box-sizing: border-box;
+    padding: 4px;
+    margin-top: 10px;
+}
+
+#login .link {
+    text-decoration: none;
+    color: rgb(39, 119, 183);
+    font-size: 0.8em;
+}
+
+#login .link:hover{
+   text-decoration: underline;
+}
+
+.button{
+    background-color:rgb(39, 119, 183);
+    border-radius: 3px;
+    color: #fff;
+    width: 100%;
+    padding: 5px;
+    border: transparent;
+    margin: 10px 0 10px 0;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.button:hover{
+    background-color: rgb(33, 93, 146);
+    text-decoration: none;
+    color: #fff;
+}
+
+hr{
+    border-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#layout-footer {
+    position: fixed;
+    bottom: 0;
+    min-width: 974px;
+    width: 100%;
+    background: #202020;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 0px;
+    text-align: center;
+}
+
+.layout-footer {
+    font-family: Arial,sans-serif;
+}

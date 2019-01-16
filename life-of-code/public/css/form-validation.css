@@ -1,0 +1,88 @@
+.container {
+  max-width: 960px;
+}
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+.border-top-gray { border-top-color: #adb5bd; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.lh-condensed { line-height: 1.25; }
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////MIS ESTILOS///////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.site-header {
+  background-color: rgba(40, 62, 74, .90);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+#link-registrar {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+#link-registrar:hover {
+  color: #fff;
+
+}
+
+#link-unirte {
+  color: #999;
+  transition: ease-in-out color .15s;
+  border: solid 1px #999;
+  padding: 0 10px 0 10px;
+  margin: 1px;
+}
+#link-unirte:hover {
+  color: #fff;
+  text-decoration: none;
+  border: solid 2px #fff;
+  margin: 0px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////Estilos-Seleccion tipo de plan/////////////////////////////*/
+#div-creditCard input, #div-creditCard select {
+  height: 30px;
+  font-size: 0.85rem;
+  padding-top: 4px;
+}
+
+#div-creditCard {
+  font-size: 0.85rem;
+}
+
+#div-creditCard .mb-3 {
+  margin-bottom: 0.2rem!important;
+}
+
+#div-creditCard label {
+  margin: 0.15rem;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////Estilos-Footer///////////////////////////////////*/
+#layout-footer {
+  margin: 15px 0px 0px 0px;
+  bottom: 0;
+  min-width: 974px;
+  width: 100%;
+  background: #202020;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 0px;
+  text-align: center;
+}
+
+.layout-footer {
+  font-family: Arial,sans-serif;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////*/
